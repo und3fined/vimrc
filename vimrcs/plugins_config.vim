@@ -29,6 +29,7 @@ map <leader>o :BufExplorer<cr>
 " => MRU plugin
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
+let MRU_File = '~/.config/vim/mru_files'
 map <leader>f :MRU<CR>
 
 
