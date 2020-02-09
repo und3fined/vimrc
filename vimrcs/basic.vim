@@ -135,16 +135,19 @@ set foldcolumn=1
 syntax enable 
 
 " Enable 256 colors palette in Gnome Terminal
-if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
-endif
+"if $COLORTERM == 'gnome-terminal'
+"    set t_Co=256
+"endif
+
+" Default 256 clors palette
+set t_Co=256
 
 try
     colorscheme desert
 catch
 endtry
 
-set background=dark
+"set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -187,9 +190,9 @@ set tabstop=4
 set lbr
 set tw=500
 
-set ai "Auto indent
-set si "Smart indent
-set wrap "Wrap lines
+set ai " Auto indent
+set si " Smart indent
+set wrap " Wrap lines
 
 
 """"""""""""""""""""""""""""""
