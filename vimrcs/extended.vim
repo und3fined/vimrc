@@ -18,7 +18,8 @@ elseif has("gui_gtk2")
 elseif has("linux")
     set gfn=IBM\ Plex\ Mono\ 14,:Hack\ 14,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11
 elseif has("unix")
-    set gfn=Monospace\ 11
+    " Disable font
+    "set gfn=Monospace\ 11
 endif
 
 " Disable scrollbars (real hackers don't use scrollbars for navigation!)
@@ -35,8 +36,8 @@ colorscheme peaksea
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>e :e! ~/.vim_runtime/my_configs.vim<cr>
-autocmd! bufwritepost ~/.vim_runtime/my_configs.vim source ~/.vim_runtime/my_configs.vim
+map <leader>e :e! ~/.config/vim/runtimes/my_configs.vim<cr>
+autocmd! bufwritepost ~/.config/vim/runtimes/my_configs.vim source ~/.config/vim/runtimes/my_configs.vim
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -44,7 +45,7 @@ autocmd! bufwritepost ~/.vim_runtime/my_configs.vim source ~/.vim_runtime/my_con
 "    means that you can undo even when you close a buffer/VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 try
-    set undodir=~/.vim_runtime/temp_dirs/undodir
+    set undodir=~/.config/vim/runtimes/temp_dirs/undodir
     set undofile
 catch
 endtry
