@@ -3,6 +3,13 @@ set -e
 
 cd ~/.config/vim/runtimes
 
+mkdir -p ~/.config/pack/vendor
+mkdir -p ~/.config/pack/vendor_non_forked
+mkdir -p ~/.config/pack/my_plugins
+ln -s ./sources_forked ~/.config/pack/vendor/start
+ln -s ./sources_non_forked ~/.config/pack/vendor/start
+ln -s ./my_plugins ~/.config/pack/vendor/start
+
 echo 'set runtimepath+=~/.config/vim/runtimes
 
 source ~/.config/vim/runtimes/vimrcs/basic.vim
